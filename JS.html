@@ -94,9 +94,63 @@ var x = getHiddenCard('1234567812345678', b = 6);
 alert(x);*/
   </script>
   <script>
-    const isInfant = (age) => age < 1;
-    var age = isInfant(4);
-    document.write(age);
+  /*const isInfant = (age) => age < 1;
+    var x = isInfant(4);
+    document.write(x);*/
+  </script>
+  <script>
+    /*const isLeapYear = (year) => year % 400 === 0 || year % 4 === 0 && year % 100 !== 0;
+    var x = isLeapYear(2000);
+    document.write(x);*/
+  </script>
+  <script>
+    /*const getLetter = (name, x) => name.charAt(x - 1);
+    // OR
+    // const getLetter = (name, x) => name[x - 1]||'';
+    var abc = getLetter('Batman', 0);
+    document.write(abc);*/
+  </script>
+  <script>
+  /*const getTypeOfSentence = (sentence) => {
+    const lastChar = sentence[sentence.length - 1];
+    let sentenceType;
+
+    if (lastChar === '!') {
+    sentenceType = 'exclamation';
+  } else if (lastChar === '?') {
+    sentenceType = 'question';
+  } else {
+    sentenceType = 'normal';
+  }
+
+return `Sentence is ${sentenceType}`;
+};
+
+var abc = getTypeOfSentence('Ukraine');
+document.write(abc);*/
+  </script>
+  <script>
+  /*const convertText = (text) => {
+    const rev = reverse(text);
+    const firstChar = text.charAt(0);
+    const upChar = text.charAt(0).toUpperCase();
+    if (firstChar === upChar) {
+    return text;
+  } else if (firstChar !== upChar) {
+    return rev;
+  } else {
+    return '';
+  }*/
+  //OR
+  /*const convertText = (text) => {
+  if (text === '') {
+    return '';
+  }
+
+  const reversable = text[0] !== text[0].toUpperCase();
+  return reversable ? reverse(text) : text;
+};
+}*/
   </script>
 </body>
 </html>
