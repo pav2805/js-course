@@ -130,27 +130,33 @@ var abc = getTypeOfSentence('Ukraine');
 document.write(abc);*/
   </script>
   <script>
-  /*const convertText = (text) => {
-    const rev = reverse(text);
-    const firstChar = text.charAt(0);
-    const upChar = text.charAt(0).toUpperCase();
-    if (firstChar === upChar) {
+  function reverseString(str) {
+    return str.split("").reverse().join("");
+};
+  function convertText(text) {
+  const rev = reverseString(text);
+  const firstChar = text.charAt(0);
+  const upChar = text.charAt(0).toUpperCase();
+  if (firstChar === upChar) {
     return text;
   } else if (firstChar !== upChar) {
     return rev;
   } else {
     return '';
-  }*/
-  //OR
-  /*const convertText = (text) => {
+  }
+};
+//OR
+/*function convertText(text) {
   if (text === '') {
     return '';
   }
 
   const reversable = text[0] !== text[0].toUpperCase();
-  return reversable ? reverse(text) : text;
-};
-}*/
+  return reversable ? reverseString(text) : text;
+};*/
+
+const x = convertText('hello');
+document.write(x);
   </script>
 </body>
 </html>
