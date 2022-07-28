@@ -10,11 +10,11 @@
       body {
         font-family: Helvetica, Sans-Serif;
         font-size: 24pt;
-      }     
+      }
         </style>
   </head>
 <body>
-    <script type="text/javascript">
+<script type="text/javascript">
       //console.log(3 ** 5);
       //console.log(-8 / -4);
       //console.log(100 % 3);
@@ -130,10 +130,10 @@ var abc = getTypeOfSentence('Ukraine');
 document.write(abc);*/
   </script>
   <script>
-  function reverseString(str) {
+  /*function reverseString(str) {
     return str.split("").reverse().join("");
-};
-  function convertText(text) {
+};*/
+  /*function convertText(text) {
   const rev = reverseString(text);
   const firstChar = text.charAt(0);
   const upChar = text.charAt(0).toUpperCase();
@@ -144,7 +144,7 @@ document.write(abc);*/
   } else {
     return '';
   }
-};
+};*/
 //OR
 /*function convertText(text) {
   if (text === '') {
@@ -155,8 +155,24 @@ document.write(abc);*/
   return reversable ? reverseString(text) : text;
 };*/
 
-const x = convertText('hello');
-document.write(x);
+/*const x = convertText('hello');
+document.write(x);*/
+  </script>
+  <script>
+    function printNumbers(lastNumber) {
+  // i – сокращение от index (порядковый номер)
+  // используется по общему соглашению во множестве языков
+  // как счётчик цикла
+  let i = lastNumber;
+
+  while (i >= 1) {
+    document.write(i + '<br>');
+    i --;
+  }
+  document.write('finished!');
+};
+
+printNumbers(888);
   </script>
 </body>
 </html>
