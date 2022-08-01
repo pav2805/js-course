@@ -159,7 +159,7 @@ document.write(abc);*/
 document.write(x);*/
   </script>
   <script>
-    function printNumbers(lastNumber) {
+    /*function printNumbers(lastNumber) {
   // i – сокращение от index (порядковый номер)
   // используется по общему соглашению во множестве языков
   // как счётчик цикла
@@ -172,7 +172,203 @@ document.write(x);*/
   document.write('finished!');
 };
 
-printNumbers(888);
+printNumbers(888);*/
+  </script>
+  <script>
+    /*function sumNumbersFromRange(start, finish) {
+  // Технически можно менять start
+  // Но входные аргументы нужно оставлять в исходном значении
+  // Это сделает код проще для анализа
+  let i = start;
+  let sum = 0; // Инициализация суммы
+
+  while (i <= finish) { // Двигаемся до конца диапазона
+    sum += i; // Считаем сумму для каждого числа
+    i ++; // Переходим к следующему числу в диапазоне
+  }
+
+  // Возвращаем получившийся результат
+  document.write(sum);
+  return sum;
+};
+
+sumNumbersFromRange(1, 3);*/
+  </script>
+  <script>
+   /*function repeat(text, times) {
+  // Нейтральный элемент для строк – пустая строка
+  let result = '';
+  let i = 1;
+
+  while (i <= times) {
+    // Каждый раз добавляем строку к результату
+    result = `${result}${text}`;
+    i ++;
+  }
+  document.write(result);
+  return result;
+};
+
+repeat('Ukraine above all! ', 3);*/
+  </script>
+  <script>
+    /*function joinNumbersFromRange(first, last) {
+let result = '';
+let i = first;
+
+while (i <= last) {
+  result += i;
+  i ++
+}
+  document.write(result);
+  return result;
+};
+
+joinNumbersFromRange(5, 8);*/
+  </script>
+  <script>
+  /*function printNameBySymbol(name) {
+  let i = 0;
+  // Такая проверка будет выполняться до конца строки
+  // включая последний символ. Его индекс `length - 1`.
+  while (i < name.length) {
+    // Обращаемся к символу по индексу
+    document.write(name[i] + '<br>');
+    i ++;
+  }
+};
+
+var name = 'Ukraine'
+printNameBySymbol(name);*/
+  </script>
+  <script>
+/*     function reverse(str) {
+  let i = 0;
+  // Нейтральный элемент для строк это пустая строка
+  let result = '';
+  while (i < str.length) {
+    // Соединяем в обратном порядке
+    // result = `${str[i]}${result}`;
+    // То же самое через конкатенацию
+     result = str[i] + result;
+    i ++;
+  }
+  document.write(result);
+  return result;
+};
+
+reverse('Fuck'); */
+  </script>
+  <script>
+    /* function mySubstr(text, index) {
+  let i = 0;
+  let result = ''
+  while (i < index) {
+  // result = `${result}${text[i]}`;
+  //OR
+  result += text[i];
+  i ++;
+  }
+
+  document.write(result);
+  return(result);
+};
+
+mySubstr('Stand with Ukraine!', 10); */
+  </script>
+  <script>
+/*     function countChars(str, char) {
+  let i = 0;
+  let count = 0;
+  while (i < str.length) {
+    if (str[i] === char) {
+      // Считаем только подходящие символы
+      count += 1;
+    } else if (str[i] === char.toUpperCase()) {
+      count += 1;
+    } else if (str[i] === char.toLowerCase()) {
+      count += 1;
+    }
+    // OR
+    // if (str[i].toLowerCase() === char.toLowerCase()) {
+    //  count += 1;
+    // }
+    // Счетчик увеличивается в любом случае
+    i ++;
+  }
+
+  document.write(count);
+  return count;
+};
+
+countChars('Goenigsegg', 'g'); */
+  </script>
+  <script>
+    /* function isPrime(number) {
+  if (number < 2) {
+    return false;
+  }
+  let divider = 2;
+
+  while (divider <= number / 2) {
+    if (number % divider === 0) {
+      document.write(false);
+      return false;
+    }
+
+    divider += 1;
+  }
+
+  document.write(true);
+  return true;
+}
+
+isPrime(11); */
+  </script>
+  <script>
+/*     let i = 5;
+    i++;  
+    i;
+    i++;
+    i;
+    document.write(i); */
+  </script>
+  <script>
+/*     function makeItFunny(str, n) {
+  let i = 0;
+  let result = '';
+  while (i < str.length) {
+    if ((i + 1) % n === 0) {
+      result = `${result}${str[i].toUpperCase()}`;
+    } else {
+      result = `${result}${str[i]}`;
+    }
+    i++;
+  }
+
+document.write(result + '<br>');
+return result;
+};
+
+makeItFunny('I never look back', 3);
+makeItFunny('hello', 2); */
+  </script>
+  <script>
+/*     const reverseString = (str) => {
+  let result = '';
+  for (let i = 0; i < str.length; i += 1) {
+    result = `${str[i]}${result}`;
+  }
+
+  return result;
+}; */
+  </script>
+  <script>
+
+
+encrypt('attack');
+encrypt('go!');
+encrypt('back!');
   </script>
 </body>
 </html>
